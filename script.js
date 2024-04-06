@@ -1,15 +1,18 @@
-const buton = document.querySelector('#buton');
 
-buton.addEventListener('subtmit', e => {
-    e.preventDefault();
 
-    const user = document.getElementById('user').value;
-    const pass = document.getElementById('pass').value;
+const boton = document.getElementById('buton');
 
-    if(user === '123' && pass === '123'){
-        window.location.href = "./videos.html";
-    }
-});
+    boton.addEventListener('click',() => {
+        const user = document.getElementById('user').value;
+        const pass = document.getElementById('pass').value;
+    
+        if (user === '123' && pass === '123') {
+           window.location.href = './principal/rule34video.html';
+        } else {
+            console.log('error');
+        }
+    });
+
 
 
 
