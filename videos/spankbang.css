@@ -10,7 +10,6 @@ iframe {
     display: flex;
     width: 560px ;
 }
-
 @media (max-width: 360px) {
     iframe {
         margin: 0 auto;
