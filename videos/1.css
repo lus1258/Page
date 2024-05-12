@@ -15,17 +15,17 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 10px;
     width: 90%;
 }
 
 iframe{
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
 }
 
-#video_container_embed #embed_video_player .vjs-big-play-button{
-    display: none !important;
+iframe .video-js.vjs-theme-sb .vjs-big-play-button{
+    display: block;
 }
