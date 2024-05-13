@@ -26,6 +26,11 @@ iframe{
     height: 200px;
 }
 
-iframe .video-js.vjs-theme-sb .vjs-big-play-button{
-    display: block;
+@media (max-width: 360px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    iframe{
+        width: 300px;
+    }
 }
