@@ -15,22 +15,27 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 10px;
     width: 90%;
 }
 
 iframe{
-    width: 200px;
+    width: 300px;
     height: 200px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
     .container{
         grid-template-columns: 1fr;
     }
     iframe{
         width: 300px;
+        height: 200px;
+    }
+
+    #embed #video_container_embed > .promo > a{
+        display: none;
     }
 }
